@@ -52,7 +52,7 @@ See [examples](./examples) for more details.
 ## Configuration
 
 | Name | Type | Required | Description |
-|------|------|-------------|
+|------|------|------|-------------|
 | `apiKey` | `string` | ◯ | Mackerel API key. |
 | `compression` | `"none" \| "gzip"` | ✘ | Compression algorithm to use. |
 | `headers` | `Record<string, string>` | ✘ | Additional headers to send with the request. |
