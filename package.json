@@ -1,6 +1,6 @@
 {
   "name": "mackerel-exporter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Open Telemetry Metrics Exporter for Mackerel",
   "type": "module",
   "main": "build/src/index.js",
