@@ -15,7 +15,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "npm run clean && npm run build"
   },
   "keywords": [
     "opentelemetry",
@@ -47,5 +48,19 @@
     "@opentelemetry/exporter-metrics-otlp-grpc": "^0.41.2",
     "@opentelemetry/sdk-metrics": "^1.15.2",
     "@opentelemetry/semantic-conventions": "^1.15.2"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azukiazusa1/mackerel-exporter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azukiazusa1/mackerel-exporter/issues"
+  },
+  "homepage": "https://github.com/azukiazusa1/mackerel-exporter#readme",
+  "files": [
+    "build"
+  ]
 }

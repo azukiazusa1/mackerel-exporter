@@ -5,7 +5,7 @@ The OpenTelemetry Mackerel Metric Exporter is allow the user to send metrics to 
 ## Installation
 
 ```sh
-# TODO
+npm i mackerel-exporter
 ```
 
 ## Usage
