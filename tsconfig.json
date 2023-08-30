@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node-lts-strictest-esm",
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": ".",
+    "ignoreDeprecations": "5.0",
+    "declaration": true,
+    "declarationMap": true,
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "ts-node": {
+    "swc": true,
+    "esm": true
+  }
+}
