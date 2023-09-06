@@ -1,12 +1,19 @@
 {
   "name": "mackerel-exporter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Open Telemetry Metrics Exporter for Mackerel",
   "type": "module",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "build/cjs/src/index.js",
+  "types": "build/cjs/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/esm/src/index.js",
+      "require": "./build/cjs/src/index.js",
+      "types": "./build/cjs/src/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "build:watch": "tsc -w",
     "dev": "ts-node --transpile-only src/index.ts",
     "clean": "rimraf build",
@@ -48,6 +55,9 @@
     "@opentelemetry/exporter-metrics-otlp-grpc": "^0.41.2",
     "@opentelemetry/sdk-metrics": "^1.15.2",
     "@opentelemetry/semantic-conventions": "^1.15.2"
+  },
+  "engines": {
+    "node": ">=14.17.0"
   },
   "directories": {
     "example": "examples"
