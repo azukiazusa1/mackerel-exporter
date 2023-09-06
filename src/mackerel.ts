@@ -1,4 +1,4 @@
-import type { ExporterConfig } from "./types";
+import type { ExporterConfig } from "./types.js";
 import { getEnv } from "@opentelemetry/core";
 import { OTLPMetricExporter } from "@opentelemetry/exporter-metrics-otlp-grpc";
 import { Metadata } from "@grpc/grpc-js";
