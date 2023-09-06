@@ -1,6 +1,6 @@
 {
   "name": "mackerel-exporter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Open Telemetry Metrics Exporter for Mackerel",
   "type": "module",
   "main": "dist/index.cjs",
