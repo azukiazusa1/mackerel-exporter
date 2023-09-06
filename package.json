@@ -67,6 +67,6 @@
   },
   "homepage": "https://github.com/azukiazusa1/mackerel-exporter#readme",
   "files": [
-    "build"
+    "dist"
   ]
 }
